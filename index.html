@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Musik Latar -->
+    <audio autoplay loop>
+        <source src="music/happy-birthday.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio tag.
+    </audio>
+
+    <header>
+        <h1>Happy Birthday!</h1>
+        <p>Ini adalah scrapbook spesial untukmu!</p>
+    </header>
+
+    <section class="gallery">
+        <div class="photo">
+            <img src="images/foto1.jpg" alt="Kenangan 1">
+            <p>Momen pertama kita!</p>
+        </div>
+        <div class="photo">
+            <img src="images/foto2.jpg" alt="Kenangan 2">
+            <p>Waktu kita tertawa bareng</p>
+        </div>
+    </section>
+
+    <!-- Pesan Interaktif -->
+    <section class="message">
+        <button onclick="showMessage()">Klik untuk pesan spesial!</button>
+        <p id="hiddenMessage" style="display: none;">Semoga harimu penuh kebahagiaan dan keberkahan! 🎉🎂</p>
+    </section>
+
+    <footer>
+        <p>Dari hati yang jauh tapi selalu dekat ❤️</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
